@@ -32,13 +32,13 @@ const Benefits = () => {
   ]
 
   return (
-    <section id="plans" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="plans" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-100">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
             Why Choose Bayminer?
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-700 max-w-3xl mx-auto">
             Experience the advantages of professional cloud mining with industry-leading 
             technology, security, and profitability.
           </p>
@@ -51,7 +51,7 @@ const Benefits = () => {
               <div className="text-4xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400 mb-2">
                 {stat.value}
               </div>
-              <div className="text-gray-400 font-medium">
+              <div className="text-slate-600 font-medium">
                 {stat.label}
               </div>
             </div>
@@ -63,16 +63,16 @@ const Benefits = () => {
           {benefits.map((benefit, index) => (
             <div 
               key={index}
-              className="flex items-start space-x-4 p-6 bg-slate-800/30 rounded-2xl border border-slate-700 hover:border-green-400/50 transition-all duration-300"
+              className="flex items-start space-x-4 p-6 bg-white rounded-2xl border border-slate-200 shadow-lg hover:border-green-400/50 transition-all duration-300"
             >
               <div className="flex-shrink-0">
                 {benefit.icon}
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white mb-3">
+                <h3 className="text-xl font-bold text-slate-800 mb-3">
                   {benefit.title}
                 </h3>
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-slate-600 leading-relaxed">
                   {benefit.description}
                 </p>
               </div>
@@ -81,28 +81,28 @@ const Benefits = () => {
         </div>
 
         {/* Mining Hardware Section */}
-        <div className="bg-gradient-to-r from-slate-800/50 to-slate-700/50 rounded-3xl p-8 md:p-12 border border-slate-600">
+        <div className="bg-slate-50 rounded-3xl p-8 md:p-12 border border-slate-200 shadow-md">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-3xl font-bold text-white mb-6">
+              <h3 className="text-3xl font-bold text-slate-800 mb-6">
                 State-of-the-Art Mining Hardware
               </h3>
               <div className="space-y-4 mb-8">
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-6 h-6 text-green-400" />
-                  <span className="text-gray-300">Latest ASIC miners from Bitmain & Canaan</span>
+                  <span className="text-slate-700">Latest ASIC miners from Bitmain & Canaan</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-6 h-6 text-green-400" />
-                  <span className="text-gray-300">High-performance GPU miners from Nvidia</span>
+                  <span className="text-slate-700">High-performance GPU miners from Nvidia</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-6 h-6 text-green-400" />
-                  <span className="text-gray-300">Partnerships with major mining pools</span>
+                  <span className="text-slate-700">Partnerships with major mining pools</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-6 h-6 text-green-400" />
-                  <span className="text-gray-300">Enterprise-grade security protocols</span>
+                  <span className="text-slate-700">Enterprise-grade security protocols</span>
                 </div>
               </div>
               <button className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300">

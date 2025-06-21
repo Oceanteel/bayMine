@@ -25,21 +25,21 @@ const Features = () => {
   ]
 
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-100">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           {/* Content */}
           <div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
               Why Bayminer?
             </h2>
-            <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+            <p className="text-lg text-slate-700 mb-8 leading-relaxed">
               Bayminer has transformed into an institutional-grade cloud mining platform, 
               building profitable and secure mining solutions for cryptocurrency investors. 
               Our team blends time-tested mining expertise with cutting-edge technology 
               and renewable energy efficiency.
             </p>
-            <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+            <p className="text-lg text-slate-700 mb-8 leading-relaxed">
               The Bayminer platform seamlessly allows today's investors to transition 
               into the digitally-powered global economy of the future, delivering 
               unrivaled results in crypto mining profitability.
@@ -65,15 +65,15 @@ const Features = () => {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="bg-slate-800/50 backdrop-blur-sm p-8 rounded-2xl border border-slate-700 hover:border-cyan-400/50 transition-all duration-300 hover:transform hover:scale-105"
+              className="bg-white backdrop-blur-sm p-8 rounded-2xl border border-slate-200 shadow-lg hover:border-cyan-400/50 transition-all duration-300 hover:transform hover:scale-105"
             >
               <div className="mb-6">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">
+              <h3 className="text-xl font-bold text-slate-800 mb-4">
                 {feature.title}
               </h3>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-slate-600 leading-relaxed">
                 {feature.description}
               </p>
             </div>
