@@ -9,48 +9,48 @@ const Affiliate = () => {
 
   const benefits = [
     {
-      icon: <Users className="w-12 h-12 text-cyan-400" />,
+      icon: <Users className="w-10 h-10 sm:w-12 sm:h-12 text-cyan-400" />,
       title: "Multi-Level Commissions",
       description: "Earn from three levels of referrals with lifetime commissions"
     },
     {
-      icon: <TrendingUp className="w-12 h-12 text-cyan-400" />,
+      icon: <TrendingUp className="w-10 h-10 sm:w-12 sm:h-12 text-cyan-400" />,
       title: "Monthly Bonuses",
       description: "Additional salary tiers based on number of active referrals"
     },
     {
-      icon: <Award className="w-12 h-12 text-cyan-400" />,
+      icon: <Award className="w-10 h-10 sm:w-12 sm:h-12 text-cyan-400" />,
       title: "Social Media Rewards",
       description: "Extra bounties for promoting Bayminer on social platforms"
     }
   ]
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/30">
+    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/30">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+        <div className="text-center mb-10 sm:mb-12 lg:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
             Invite and Build Your Team to Earn More
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
             Join our profitable affiliate program and earn lifetime commissions 
             from your referral network. Start building your passive income stream today.
           </p>
         </div>
 
         {/* Commission Levels */}
-        <div className="flex justify-center items-center space-x-8 mb-16">
+        <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-6 lg:space-x-8 gap-8 sm:gap-0 mb-10 sm:mb-12 lg:mb-16">
           {commissionLevels.map((level, index) => (
             <div key={index} className="relative">
-              {/* Connector Line */}
+              {/* Connector Line - Visible only on sm screens and up */}
               {index < commissionLevels.length - 1 && (
-                <div className="absolute top-1/2 left-full w-16 h-0.5 bg-gradient-to-r from-slate-600 to-slate-500 transform -translate-y-1/2 z-0"></div>
+                <div className="hidden sm:block absolute top-1/2 left-full w-12 lg:w-16 h-0.5 bg-gradient-to-r from-slate-600 to-slate-500 transform -translate-y-1/2 z-0"></div>
               )}
               
               <div className="relative z-10 text-center">
-                <div className={`w-24 h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-r ${level.color} flex items-center justify-center mb-4 mx-auto shadow-2xl border-4 border-slate-700`}>
+                <div className={`w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full bg-gradient-to-r ${level.color} flex items-center justify-center mb-4 mx-auto shadow-2xl border-4 border-slate-700`}>
                   <div className="text-center">
-                    <div className="text-2xl md:text-3xl font-bold text-white">
+                    <div className="text-xl sm:text-2xl md:text-3xl font-bold text-white">
                       {level.percentage}
                     </div>
                     <div className="text-sm text-gray-200">
@@ -63,7 +63,7 @@ const Affiliate = () => {
           ))}
         </div>
 
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 sm:mb-12 lg:mb-16">
           <p className="text-lg text-gray-300 mb-8">
             {/* TODO: Verify the "5% deposit commission" and the overall structure of commission levels. The text below is aligned with the 3 visually displayed earning tiers. */}
             You'll receive <span className="text-green-400 font-semibold">5%</span> of each deposit 
@@ -74,17 +74,17 @@ const Affiliate = () => {
             <span className="text-orange-400 font-semibold">0.5%</span> (Level 3).
           </p>
           
-          <button className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-12 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105">
+          <button className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-3 text-base sm:px-10 sm:py-4 sm:text-lg lg:px-12 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
             Start Building
           </button>
         </div>
 
         {/* Benefits Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           {benefits.map((benefit, index) => (
             <div 
               key={index}
-              className="text-center p-8 bg-slate-800/50 backdrop-blur-sm rounded-2xl border border-slate-700 hover:border-cyan-400/50 transition-all duration-300"
+              className="text-center p-6 sm:p-8 bg-slate-800/50 backdrop-blur-sm rounded-2xl border border-slate-700 hover:border-cyan-400/50 transition-all duration-300"
             >
               <div className="flex justify-center mb-6">
                 {benefit.icon}

@@ -27,10 +27,10 @@ const Footer = () => {
 
   return (
     <footer id="faq" className="bg-slate-900 border-t border-slate-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid lg:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 lg:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div className="lg:col-span-1">
+          <div className="sm:col-span-2 lg:col-span-1">
             <div className="mb-6">
               <img 
                 src="/bayminer_logo.png" 
@@ -124,7 +124,7 @@ const Footer = () => {
         </div>
 
         {/* Payment Methods */}
-        <div className="border-t border-slate-800 pt-8 mt-8">
+        <div className="border-t border-slate-800 pt-6 mt-6 sm:pt-8 sm:mt-8">
           <h4 className="text-white font-semibold mb-4 text-center">Accepted Payment Methods</h4>
           <div className="flex flex-wrap justify-center gap-4">
             {paymentMethods.map((method, index) => (
@@ -139,12 +139,12 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-slate-800 pt-8 mt-8 text-center">
+        <div className="border-t border-slate-800 pt-6 mt-6 sm:pt-8 sm:mt-8 text-center">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
               © 2024 Bayminer.io. All rights reserved.
             </div>
-            <div className="flex space-x-6 text-sm">
+            <div className="flex flex-col space-y-2 text-sm sm:flex-row sm:space-y-0 sm:space-x-4 lg:space-x-6">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 Privacy Policy
               </a>
