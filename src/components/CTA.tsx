@@ -21,16 +21,16 @@ const CTA = () => {
   ]
 
   return (
-    <section id="support" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+    <section id="support" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="bg-gradient-to-r from-slate-800/80 to-slate-700/80 rounded-3xl p-6 sm:p-8 md:p-12 border border-slate-600">
+        <div className="bg-gray-100 rounded-3xl p-6 sm:p-8 md:p-12 border border-gray-200">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Content */}
             <div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 Create Your Account Now!
               </h2>
-              <p className="text-lg sm:text-xl text-gray-300 mb-8">
+              <p className="text-lg sm:text-xl text-gray-700 mb-8">
                 Invest with us and take advantage of our unique mining offering. 
                 Start earning passive income from cryptocurrency mining today.
               </p>
@@ -40,7 +40,7 @@ const CTA = () => {
                 {benefits.map((benefit, index) => (
                   <div key={index} className="flex items-start space-x-3">
                     {benefit.icon}
-                    <span className="text-gray-300 leading-relaxed">
+                    <span className="text-gray-700 leading-relaxed">
                       {benefit.text}
                     </span>
                   </div>
@@ -51,13 +51,13 @@ const CTA = () => {
                 <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-3 text-base sm:px-8 sm:py-4 sm:text-lg rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
                   Start Mining Today
                 </button>
-                <button className="border-2 border-green-500 text-green-400 hover:bg-green-500 hover:text-white px-6 py-3 text-base sm:px-8 sm:py-4 sm:text-lg rounded-lg font-semibold transition-all duration-300">
+                <button className="border-2 border-green-500 text-green-600 hover:bg-green-500 hover:text-white px-6 py-3 text-base sm:px-8 sm:py-4 sm:text-lg rounded-lg font-semibold transition-all duration-300">
                   View Contracts
                 </button>
               </div>
 
-              <div className="mt-8 pt-6 border-t border-slate-600">
-                <p className="text-base sm:text-lg text-cyan-400 font-semibold flex items-center">
+              <div className="mt-8 pt-6 border-t border-gray-300">
+                <p className="text-base sm:text-lg text-cyan-600 font-semibold flex items-center">
                   <CheckCircle className="w-5 h-5 mr-2" />
                   Be part of our growing company! →
                 </p>
@@ -77,13 +77,13 @@ const CTA = () => {
 
               {/* Bonus Highlights */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-                <div className="bg-gradient-to-r from-green-600/20 to-green-700/20 border border-green-500/30 rounded-xl p-4 sm:p-6 text-center">
-                  <div className="text-2xl sm:text-3xl font-bold text-green-400 mb-2">$15</div>
-                  <div className="text-sm text-gray-300">Welcome Bonus</div>
+                <div className="bg-gray-200 border border-gray-300 rounded-xl p-4 sm:p-6 text-center">
+                  <div className="text-2xl sm:text-3xl font-bold text-green-600 mb-2">$15</div>
+                  <div className="text-sm text-gray-700">Welcome Bonus</div>
                 </div>
-                <div className="bg-gradient-to-r from-blue-600/20 to-blue-700/20 border border-blue-500/30 rounded-xl p-4 sm:p-6 text-center">
-                  <div className="text-2xl sm:text-3xl font-bold text-blue-400 mb-2">$0.60</div>
-                  <div className="text-sm text-gray-300">Daily Check-in</div>
+                <div className="bg-gray-200 border border-gray-300 rounded-xl p-4 sm:p-6 text-center">
+                  <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-2">$0.60</div>
+                  <div className="text-sm text-gray-700">Daily Check-in</div>
                 </div>
               </div>
             </div>

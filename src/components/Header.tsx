@@ -5,10 +5,10 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navItems = [
-    { name: 'About Us', href: '#about', borderColor: 'border-blue-500' },
-    { name: 'Mining Plans', href: '#plans', borderColor: 'border-orange-500' },
-    { name: 'FAQ', href: '#faq', borderColor: 'border-purple-500' },
-    { name: 'Support', href: '#support', borderColor: 'border-teal-500' },
+    { name: 'About Us', href: '#about' },
+    { name: 'Mining Plans', href: '#plans' },
+    { name: 'FAQ', href: '#faq' },
+    { name: 'Support', href: '#support' },
   ]
 
   return (
@@ -30,7 +30,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className={`px-4 py-2 text-white text-sm font-medium border-2 ${item.borderColor} rounded-lg hover:bg-white/10 transition-colors duration-300`}
+                className="text-white text-sm font-medium hover:text-blue-400 transition-colors duration-300"
               >
                 {item.name}
               </a>
@@ -62,7 +62,7 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className={`block px-4 py-2 text-white text-sm font-medium border-2 ${item.borderColor} rounded-lg hover:bg-white/10 transition-colors duration-300`}
+                  className="block text-white text-sm font-medium hover:text-blue-400 transition-colors duration-300 py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
