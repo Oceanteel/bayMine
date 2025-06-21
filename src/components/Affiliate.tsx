@@ -65,11 +65,13 @@ const Affiliate = () => {
 
         <div className="text-center mb-16">
           <p className="text-lg text-gray-300 mb-8">
+            {/* TODO: Verify the "5% deposit commission" and the overall structure of commission levels. The text below is aligned with the 3 visually displayed earning tiers. */}
             You'll receive <span className="text-green-400 font-semibold">5%</span> of each deposit 
-            from the first-level participants. Moreover, you will get 
-            <span className="text-blue-400 font-semibold"> 3%, 1.5%</span> and 
-            <span className="text-orange-400 font-semibold"> 0.5%</span> of earnings 
-            from the other four levels.
+            from the first-level participants. Moreover, you can earn commissions from referral earnings across
+            <span className="text-blue-400 font-semibold"> three levels</span>:
+            <span className="text-blue-400 font-semibold">3%</span> (Level 1),
+            <span className="text-green-400 font-semibold">1.5%</span> (Level 2), and
+            <span className="text-orange-400 font-semibold">0.5%</span> (Level 3).
           </p>
           
           <button className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-12 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105">
