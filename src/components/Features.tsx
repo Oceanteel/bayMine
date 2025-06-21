@@ -33,13 +33,13 @@ const Features = () => {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
               Why Bayminer?
             </h2>
-            <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+            <p className="text-lg text-slate-700 mb-8 leading-relaxed">
               Bayminer has transformed into an institutional-grade cloud mining platform, 
               building profitable and secure mining solutions for cryptocurrency investors. 
               Our team blends time-tested mining expertise with cutting-edge technology 
               and renewable energy efficiency.
             </p>
-            <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+            <p className="text-lg text-slate-700 mb-8 leading-relaxed">
               The Bayminer platform seamlessly allows today's investors to transition 
               into the digitally-powered global economy of the future, delivering 
               unrivaled results in crypto mining profitability.
@@ -70,10 +70,10 @@ const Features = () => {
               <div className="mb-6">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">
+              <h3 className="text-xl font-bold text-slate-800 mb-4">
                 {feature.title}
               </h3>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-slate-600 leading-relaxed">
                 {feature.description}
               </p>
             </div>

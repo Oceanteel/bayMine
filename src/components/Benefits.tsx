@@ -63,16 +63,16 @@ const Benefits = () => {
           {benefits.map((benefit, index) => (
             <div 
               key={index}
-              className="flex items-start space-x-4 p-6 bg-slate-800/30 rounded-2xl border border-slate-700 hover:border-green-400/50 transition-all duration-300"
+              className="flex items-start space-x-4 p-6 bg-white rounded-2xl border border-slate-200 shadow-lg hover:border-green-400/50 transition-all duration-300"
             >
               <div className="flex-shrink-0">
                 {benefit.icon}
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white mb-3">
+                <h3 className="text-xl font-bold text-slate-800 mb-3">
                   {benefit.title}
                 </h3>
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-slate-600 leading-relaxed">
                   {benefit.description}
                 </p>
               </div>
