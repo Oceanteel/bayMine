@@ -33,7 +33,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/bayminer-logo.webp" 
+              src="/bayminer-logo.png" 
               alt="Bayminer.io" 
               className={`transition-all duration-300 ${
                 isScrolled ? 'brightness-100' : 'brightness-110'
