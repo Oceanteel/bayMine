@@ -27,7 +27,7 @@ const Affiliate = () => {
   ]
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/30">
+    <section id="affiliate" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/30">
       <div className="max-w-7xl mx-auto">
         <AnimateOnScroll animation="fade-up">
           <div className="text-center mb-10 sm:mb-12 lg:mb-16">
