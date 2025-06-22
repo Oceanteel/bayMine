@@ -143,6 +143,29 @@ html {
   }
 }
 
+/* Scroll to top button animations */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOutDown {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
 /* Animation classes */
 .animate-float {
   animation: float 3s ease-in-out infinite;
@@ -197,6 +220,14 @@ html {
   animation: gradient-shift 3s ease infinite;
 }
 
+.animate-slide-in-up {
+  animation: slideInUp 0.3s ease-out both;
+}
+
+.animate-slide-out-down {
+  animation: slideOutDown 0.3s ease-out both;
+}
+
 /* Hover effects */
 .hover-lift {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -236,4 +267,22 @@ html {
 
 img {
   object-position: top;
+}
+
+/* Focus styles for better accessibility */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Smooth transitions for interactive elements */
+button,
+a {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Ensure scroll-to-top button is always above other elements */
+.scroll-to-top {
+  z-index: 9999;
 }

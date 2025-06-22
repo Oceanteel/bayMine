@@ -22,6 +22,26 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  // Smooth scroll to top when logo is clicked
+  const handleLogoClick = (e: React.MouseEvent) => {
+    e.preventDefault()
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+
+  // Handle keyboard navigation for logo
+  const handleLogoKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault()
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
+    }
+  }
+
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
@@ -32,14 +52,22 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 sm:h-18 lg:h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <img 
-              src="/bayminer-logo.png" 
-              alt="Bayminer.io" 
-              className={`transition-all duration-300 ${
-                isScrolled ? 'brightness-100' : 'brightness-110'
-              } h-12 sm:h-14 lg:h-16 xl:h-18 w-auto object-contain`}
-              style={{ maxWidth: '280px' }}
-            />
+            <button
+              onClick={handleLogoClick}
+              onKeyDown={handleLogoKeyDown}
+              className="focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 rounded-lg transition-all duration-300 hover:scale-105"
+              aria-label="Scroll to top"
+              title="Click to scroll to top"
+            >
+              <img 
+                src="/bayminer-logo.png" 
+                alt="Bayminer.io" 
+                className={`transition-all duration-300 ${
+                  isScrolled ? 'brightness-100' : 'brightness-110'
+                } h-12 sm:h-14 lg:h-16 xl:h-18 w-auto object-contain cursor-pointer`}
+                style={{ maxWidth: '280px' }}
+              />
+            </button>
           </div>
 
           {/* Desktop Navigation */}

@@ -6,6 +6,7 @@ import Benefits from './components/Benefits'
 import Affiliate from './components/Affiliate'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Affiliate />
       <CTA />
       <Footer />
+      <ScrollToTop />
     </div>
   )
 }
