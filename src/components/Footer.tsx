@@ -15,7 +15,6 @@ const Footer = () => {
     { name: "About Us", href: "#about" },
     { name: "Mining Plans", href: "#plans" },
     { name: "Affiliate Program", href: "#affiliate" },
-    { name: "FAQ", href: "#faq" },
     { name: "Support", href: "#support" }
   ]
 
@@ -38,7 +37,7 @@ const Footer = () => {
                 <img 
                   src="/bayminer-logo.png" 
                   alt="Bayminer.io" 
-                  className="h-8 w-auto object-contain mb-4"
+                  className="h-12 w-auto object-contain mb-4"
                 />
                 <p className="text-gray-300 text-sm leading-relaxed">
                   The innovation leader in global crypto mining, delivering unrivaled results 
