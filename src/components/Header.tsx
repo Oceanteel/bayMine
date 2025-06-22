@@ -35,9 +35,10 @@ const Header = () => {
             <img 
               src="/bayminer-logo.webp" 
               alt="Bayminer.io" 
-              className={`w-auto transition-all duration-300 ${
+              className={`transition-all duration-300 ${
                 isScrolled ? 'brightness-100' : 'brightness-110'
-              } h-10 sm:h-12 lg:h-14 min-w-[150px] sm:min-w-[160px] lg:min-w-[180px]`}
+              } h-8 sm:h-10 lg:h-12 w-auto object-contain`}
+              style={{ maxWidth: '180px' }}
             />
           </div>
 
