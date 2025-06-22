@@ -9,8 +9,6 @@ const Header = () => {
     { name: 'About Us', href: '#about' },
     { name: 'Benefits', href: '#plans' },
     { name: 'Affiliate', href: '#affiliate' },
-    { name: 'FAQ', href: '#faq' },
-    { name: 'Support', href: '#support' },
   ]
 
   useEffect(() => {
