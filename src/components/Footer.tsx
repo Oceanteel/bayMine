@@ -36,7 +36,7 @@ const Footer = () => {
             <div className="sm:col-span-2 lg:col-span-1">
               <div className="mb-6">
                 <img 
-                  src="/bayminer_logo.png" 
+                  src="/bayminer-logo.webp" 
                   alt="Bayminer.io" 
                   className="h-10 w-auto mb-4"
                 />
