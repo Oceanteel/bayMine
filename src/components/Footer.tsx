@@ -38,8 +38,8 @@ const Footer = () => {
                 <img 
                   src="/bayminer-logo.webp" 
                   alt="Bayminer.io" 
-                  className="h-16 sm:h-20 lg:h-24 w-auto object-contain mb-4"
-                  style={{ maxWidth: '200px' }}
+                  className="h-20 sm:h-24 lg:h-28 xl:h-32 w-auto object-contain mb-4"
+                  style={{ maxWidth: '280px' }}
                 />
                 <p className="text-gray-300 text-sm leading-relaxed">
                   The innovation leader in global crypto mining, delivering unrivaled results 
