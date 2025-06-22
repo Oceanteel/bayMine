@@ -6,6 +6,7 @@ const Footer = () => {
     { name: "Bitcoin", color: "text-orange-400" },
     { name: "Ethereum", color: "text-blue-400" },
     { name: "Bitcoin Cash", color: "text-blue-500" },
+    { name: "USDT", color: "text-green-500" },
     { name: "Payeer", color: "text-green-400" },
     { name: "Perfect Money", color: "text-red-400" }
   ]
