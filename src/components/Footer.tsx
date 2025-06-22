@@ -155,7 +155,7 @@ const Footer = () => {
           <div className="border-t border-slate-800 pt-6 mt-6 sm:pt-8 sm:mt-8 text-center">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <div className="text-gray-400 text-sm">
-                © 2024 Bayminer.io. All rights reserved.
+                © 2025 Bayminer.io. All rights reserved.
               </div>
               <div className="flex flex-col space-y-2 text-sm sm:flex-row sm:space-y-0 sm:space-x-4 lg:space-x-6">
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">
