@@ -50,7 +50,7 @@ export default function Hero() {
           <div className="relative mt-8 lg:mt-0">
             <div className="relative z-10">
               <img 
-                src="/images/blockchain_3d.jpg" 
+                src="/images/HeroImage.png" 
                 alt="Crypto Mining Technology"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
