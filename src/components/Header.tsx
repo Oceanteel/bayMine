@@ -29,15 +29,15 @@ const Header = () => {
         : 'bg-transparent'
     }`} style={{ backgroundColor: isScrolled ? 'rgba(0, 5, 52, 0.95)' : 'transparent' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16 sm:h-18 lg:h-20">
           {/* Logo */}
           <div className="flex items-center">
             <img 
               src="/bayminer-logo.webp" 
               alt="Bayminer.io" 
-              className={`h-8 w-auto transition-all duration-300 ${
+              className={`w-auto transition-all duration-300 ${
                 isScrolled ? 'brightness-100' : 'brightness-110'
-              }`}
+              } h-10 sm:h-12 lg:h-14 min-w-[150px] sm:min-w-[160px] lg:min-w-[180px]`}
             />
           </div>
 
