@@ -56,8 +56,8 @@ const Features = () => {
           <AnimateOnScroll animation="slide-right" delay={200}>
             <div className="relative mt-8 lg:mt-0">
               <img 
-                src="/images/mining_datacenter.jpg" 
-                alt="Mining Data Center"
+                src="/images/mining-rig.webp" 
+                alt="Mining Hardware"
                 className="w-full h-auto rounded-2xl shadow-2xl hover-scale"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/10 to-green-400/10 rounded-2xl"></div>
