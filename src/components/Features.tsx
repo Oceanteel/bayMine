@@ -6,7 +6,7 @@ const Features = () => {
     {
       icon: <Zap className="w-10 h-10 sm:w-12 sm:h-12 text-cyan-400" />,
       title: "Automated Mining",
-      description: "State-of-the-art ASIC and GPU miners with fully automated operations"
+      description: "State-of-the-art ASIC and GPU miners"
     },
     {
       icon: <Shield className="w-10 h-10 sm:w-12 sm:h-12 text-cyan-400" />,
