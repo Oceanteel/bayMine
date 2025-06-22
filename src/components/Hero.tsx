@@ -4,25 +4,25 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content */}
-          <div className="text-left">
-            <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in-up-1">
+          <div className="text-center md:text-left">
+            <h1 className="text-4xl md:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in-up-1">
               The Innovation Leader in{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">
                 Global Crypto Mining
               </span>
             </h1>
             
-            <p className="text-base sm:text-xl text-gray-300 mb-8 leading-relaxed animate-fade-in-up-2">
+            <p className="text-base md:text-xl text-gray-300 mb-8 leading-relaxed animate-fade-in-up-2 text-center md:text-left">
               Bayminer.io delivers unrivaled results through automated cloud mining. 
               Start earning passive income from cryptocurrency mining with zero technical 
               experience required.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-8 animate-fade-in-up-3">
-              <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-3 text-base sm:px-8 sm:py-4 sm:text-lg rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-blue-500/25">
+            <div className="flex flex-col sm:flex-row gap-4 mb-8 animate-fade-in-up-3 items-center">
+              <button className="w-4/5 sm:w-auto bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-3 text-base sm:px-8 sm:py-4 sm:text-lg rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-blue-500/25">
                 CREATE AN ACCOUNT
               </button>
-              <button className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-6 py-3 text-base sm:px-8 sm:py-4 sm:text-lg rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-green-500/25">
+              <button className="w-4/5 sm:w-auto bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-6 py-3 text-base sm:px-8 sm:py-4 sm:text-lg rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-green-500/25">
                 VIEW CONTRACTS
               </button>
             </div>
@@ -49,11 +49,17 @@ export default function Hero() {
           {/* Visual */}
           <div className="relative mt-12 lg:mt-0">
             <div className="relative z-10">
-              <img 
-                src="/images/HeroImage.png" 
-                alt="Crypto Mining Technology"
-                className="w-full h-auto rounded-2xl shadow-2xl"
-              />
+              <picture>
+                <source 
+                  media="(max-width: 767px)" 
+                  srcSet="/images/HeroImage-mobile.webp"
+                />
+                <img 
+                  src="/images/HeroImage.png" 
+                  alt="Crypto Mining Technology"
+                  className="w-full h-auto rounded-2xl shadow-2xl"
+                />
+              </picture>
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-green-400/20 rounded-2xl"></div>
             </div>
             

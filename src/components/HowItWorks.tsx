@@ -24,7 +24,7 @@ const HowItWorks = () => {
   ]
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#020f45' }}>
+    <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: 'rgb(0, 5, 52)' }}>
       <div className="max-w-7xl mx-auto">
         <AnimateOnScroll animation="fade-up">
           <div className="text-center mb-10 sm:mb-12 lg:mb-16">
