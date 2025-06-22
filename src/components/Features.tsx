@@ -11,7 +11,7 @@ const Features = () => {
     {
       icon: <Shield className="w-10 h-10 sm:w-12 sm:h-12 text-cyan-400" />,
       title: "Secure Platform",
-      description: "EV SSL encryption, DDoS protection, and McAfee security protocols"
+      description: "EV SSL encryption, & DDoS protection by Cloudflare"
     },
     {
       icon: <Globe className="w-10 h-10 sm:w-12 sm:h-12 text-cyan-400" />,
