@@ -13,7 +13,7 @@ const Footer = () => {
 
   const quickLinks = [
     { name: "About Us", href: "#about" },
-    { name: "Mining Plans", href: "#plans" },
+    { name: "Benefits", href: "#plans" },
     { name: "Affiliate Program", href: "#affiliate" },
     { name: "Support", href: "#support" }
   ]
