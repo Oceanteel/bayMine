@@ -25,9 +25,9 @@ const Header = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'backdrop-blur-md border-b border-slate-800 shadow-lg' 
+        ? 'bg-dark-blue-bg/95 backdrop-blur-md border-b border-slate-800 shadow-lg' 
         : 'bg-transparent'
-    }`} style={{ backgroundColor: isScrolled ? 'rgba(0, 5, 52, 0.95)' : 'transparent' }}>
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-18 lg:h-20">
           {/* Logo */}
@@ -75,7 +75,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-slate-800 backdrop-blur-md" style={{ backgroundColor: 'rgba(0, 5, 52, 0.95)' }}>
+          <div className="md:hidden py-4 border-t border-slate-800 bg-dark-blue-bg/95 backdrop-blur-md">
             <div className="space-y-2">
               {navItems.map((item) => (
                 <a
