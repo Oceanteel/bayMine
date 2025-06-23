@@ -59,12 +59,22 @@ const CTA = () => {
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-3 text-base sm:px-8 sm:py-4 sm:text-lg rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25">
+                    <a
+                      href="https://dash.bayminer.io/register"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-3 text-base sm:px-8 sm:py-4 sm:text-lg rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25 text-center"
+                    >
                       Start Mining Today
-                    </button>
-                    <button className="border-2 border-green-500 text-green-600 hover:bg-green-500 hover:text-white px-6 py-3 text-base sm:px-8 sm:py-4 sm:text-lg rounded-lg font-semibold transition-all duration-300 hover:scale-105">
+                    </a>
+                    <a
+                      href="https://dash.bayminer.io/login"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="border-2 border-green-500 text-green-600 hover:bg-green-500 hover:text-white px-6 py-3 text-base sm:px-8 sm:py-4 sm:text-lg rounded-lg font-semibold transition-all duration-300 hover:scale-105 text-center"
+                    >
                       View Contracts
-                    </button>
+                    </a>
                   </div>
 
                   <div className="mt-8 pt-6 border-t border-gray-300">

@@ -79,9 +79,14 @@ const Affiliate = () => {
               <span className="text-orange-400 font-semibold">0.5%</span> (Level 3).
             </p>
             
-            <button className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-3 text-base sm:px-10 sm:py-4 sm:text-lg lg:px-12 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/25">
+            <a
+              href="https://dash.bayminer.io/register"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-3 text-base sm:px-10 sm:py-4 sm:text-lg lg:px-12 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/25 inline-block"
+            >
               Start Building
-            </button>
+            </a>
           </div>
         </AnimateOnScroll>
 
