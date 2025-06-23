@@ -77,9 +77,14 @@ const HowItWorks = () => {
 
         <AnimateOnScroll animation="fade-up" delay={600}>
           <div className="text-center mt-10 sm:mt-12 lg:mt-16">
-            <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-3 text-base sm:px-10 sm:py-4 sm:text-lg lg:px-12 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25">
+            <a
+              href="https://dash.bayminer.io/register"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-3 text-base sm:px-10 sm:py-4 sm:text-lg lg:px-12 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25 inline-block"
+            >
               Get Started Now
-            </button>
+            </a>
           </div>
         </AnimateOnScroll>
       </div>

@@ -46,9 +46,14 @@ const Features = () => {
                 into the digitally-powered global economy of the future, delivering 
                 unrivaled results in crypto mining profitability.
               </p>
-              <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-3 text-base sm:text-lg sm:px-8 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25">
+              <a
+                href="https://dash.bayminer.io/register"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-3 text-base sm:text-lg sm:px-8 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25 inline-block"
+              >
                 GET STARTED
-              </button>
+              </a>
             </div>
           </AnimateOnScroll>
 

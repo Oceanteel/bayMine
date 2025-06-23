@@ -119,9 +119,14 @@ const Benefits = () => {
                     <span className="text-sm sm:text-base text-gray-700">Enterprise-grade security protocols</span>
                   </div>
                 </div>
-                <button className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-6 py-3 text-base sm:text-lg sm:px-8 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/25">
+                <a
+                  href="https://dash.bayminer.io/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-6 py-3 text-base sm:text-lg sm:px-8 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/25 inline-block"
+                >
                   Explore Mining Plans
-                </button>
+                </a>
               </div>
               <div className="relative mt-8 lg:mt-0">
                 <img 

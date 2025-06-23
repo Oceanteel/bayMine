@@ -63,7 +63,7 @@ const Header = () => {
                 alt="Bayminer.io" 
                 className={`transition-all duration-300 ${
                   isScrolled ? 'brightness-100' : 'brightness-110'
-                } h-12 sm:h-14 lg:h-16 xl:h-18 w-auto object-contain cursor-pointer`}
+                } h-12 w-auto object-contain cursor-pointer`}
                 style={{ maxWidth: '280px' }}
               />
             </button>
@@ -81,12 +81,22 @@ const Header = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
-            <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25">
+            <a
+              href="https://dash.bayminer.io/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
+            >
               Sign In
-            </button>
-            <button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/25">
+            </a>
+            <a
+              href="https://dash.bayminer.io/register"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-2 rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/25"
+            >
               Start Mining
-            </button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -115,12 +125,22 @@ const Header = () => {
                 </a>
               ))}
               <div className="pt-2 space-y-2">
-                <button className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-all duration-300">
+                <a
+                  href="https://dash.bayminer.io/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-all duration-300 text-center"
+                >
                   Sign In
-                </button>
-                <button className="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-2 rounded-lg font-medium transition-all duration-300">
+                </a>
+                <a
+                  href="https://dash.bayminer.io/register"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-2 rounded-lg font-medium transition-all duration-300 text-center"
+                >
                   Start Mining
-                </button>
+                </a>
               </div>
             </div>
           </div>
